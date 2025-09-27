@@ -17,8 +17,8 @@ phases:
       - mvn package -B -DskipTests
   post_build:
     commands:
-    - echo "Build completed. Preparing artifact for Elastic Beanstalk"
-    - cp target/*.war ROOT.war   # copy to root
+      - echo "Build completed. Preparing artifact for Elastic Beanstalk"
+      - cp target/*.war ROOT.war   # copy to root
   # post_build:
   #   commands:
   #     - echo "Build completed. Preparing artifact for Elastic Beanstalk"
